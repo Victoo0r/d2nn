@@ -1,0 +1,13 @@
+# Python bytecode caches
+__pycache__/
+*.py[cod]
+
+# MNIST raw dataset
+train/data/
+
+# Preprocessed large arrays (~10 GB, regenerated via torch_prepro.py)
+train/preprocessed/
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db

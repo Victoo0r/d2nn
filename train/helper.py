@@ -92,6 +92,7 @@ class OpticalNetwork(nn.Module):
         for _ in range(layersCount):
             layers.append(propagation_layer(L, lmbda, z))
             layers.append(modulation_layer(M, M))
+        layers.append(propagation_layer(L, lmbda, z))
 
         self.optical_layers = nn.Sequential(*layers)
         self.imaging = imaging_layer()
